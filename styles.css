@@ -1,0 +1,94 @@
+:root {
+  --clr-Red: hsl(1, 90%, 64%);
+  --clr-Green: hsl(150, 100%, 38%);
+  --clr-bg: rgb(4, 0, 27);
+  --clr-form-bg: rgba(255, 255, 255, 0.1);
+  --clr-white: rgba(255, 255, 255, 0.5);
+  --clr-black: black;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('gambar1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-form-bg);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #363062;
+}
+
+label {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  display: flex;
+  color: #2d2727;
+  background-color: var(--clr-white);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  height: 30px;
+  width: 200%;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(to right, #363062, #435585, #818fb4);
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  display: block;
+  height: 2.5rem;
+  width: 100%;
+  max-width: 50%;
+  color: white;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  letter-spacing: 2px;
+  max-width: 55%;
+  background: linear-gradient(
+    to right,
+    hsl(240, 100%, 25%),
+    hsl(240, 100%, 20%)
+  );
+  transform: scale(1.1);
+}
+
+.bt {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
